@@ -1,5 +1,7 @@
 package com.dream.customtransformplugin
 
+import com.android.build.api.transform.QualifiedContent
+import com.android.build.api.transform.Transform
 import com.dream.customtransformplugin.base.BaseCustomTransform
 import java.io.InputStream
 import java.io.OutputStream
@@ -7,17 +9,21 @@ import java.io.OutputStream
 /**
  * function: 自定义 Transform
  */
-class MyCustomTransform: BaseCustomTransform(true) {
-
+class MyCustomTransform: Transform() {
     override fun getName(): String {
-        return "ErdaiTransform"
+        TODO("Not yet implemented")
     }
 
-    /**
-     * 此方法可以使用 ASM 或 Javassist 进行字节码插桩
-     * 目前只是一个默认实现
-     */
-    override fun provideFunction() = { ios: InputStream, zos: OutputStream ->
-        zos.write(ios.readAllBytes())
+    override fun getInputTypes(): MutableSet<QualifiedContent.ContentType> {
+        TODO("Not yet implemented")
     }
+
+    override fun getScopes(): MutableSet<in QualifiedContent.Scope> {
+        TODO("Not yet implemented")
+    }
+
+    override fun isIncremental(): Boolean {
+        TODO("Not yet implemented")
+    }
+
 }

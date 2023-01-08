@@ -25,7 +25,7 @@ dependencies {
 //采用 Gradle 配置的方式进行插件注册
 gradlePlugin {
     plugins {
-        modularPlugin {
+        simplePlugin {
             id = 'CustomTransformPlugin'
             implementationClass = 'com.dream.customtransformplugin.CustomTransformPlugin'
         }

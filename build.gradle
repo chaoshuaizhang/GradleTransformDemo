@@ -3,15 +3,15 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url('repo')
-        }
+//        maven {
+//            url('repo')
+//        }
     }
     dependencies {
         //noinspection AndroidGradlePluginVersion
         classpath "com.android.tools.build:gradle:7.2.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.20"
-        classpath "com.dream:customtransformplugin:1.0.0"
+//        classpath "com.dream:customtransformplugin:1.0.0"
     }
 }
 
